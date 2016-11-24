@@ -8471,7 +8471,7 @@ if (process.env.NODE_ENV === "development") {
 global.addEventListener('message', function (e) {
     var packet = e.data;
     workerUtils.dispatchHandlers(packet, function (obj) {
-        return postMessage(obj);
+       // return postMessage(obj);
     });
 });
 
